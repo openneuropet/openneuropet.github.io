@@ -367,6 +367,7 @@ header
   font-weight: 700;
   letter-spacing: 2px;
   float: left;
+  line-height: normal;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
