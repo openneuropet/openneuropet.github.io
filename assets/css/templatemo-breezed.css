@@ -146,6 +146,13 @@ body {
   }
 }
 
+@media(max-width: 767px){
+ .Modern-Slider .text-content {
+    display: flex;
+    flex-direction: column;
+ }
+}
+
 a.main-stroked-button {
   font-size: 13px;
   border-radius: 25px;
