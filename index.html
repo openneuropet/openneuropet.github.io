@@ -49,7 +49,14 @@ https://templatemo.com/tm-543-breezed
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
                             <li class="scroll-to-section"><a href="#about">About</a></li>
-                            <li class="scroll-to-section"><a href="#projects">Projects</a></li>
+                            <li class="submenu">
+                                <a href="javascript:;">Activities</a>
+                                <ul>
+                                    <li><a href="#projects">At a glance</a></li>
+                                    <li><a href="outreach_activities.html"
+                                      target="_blank"> Talks, BrainHack, courses</a></li>
+                                </ul>
+                            </li>
                             <li class="submenu">
                                 <a href="javascript:;">Work with Open Data</a>
                                 <ul>
@@ -197,7 +204,7 @@ https://templatemo.com/tm-543-breezed
     <section class="section" id="features">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                <div class="col-lg-4 col-md-8 col-sm-12 col-xs-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
                     <div class="features-item">
                         <div class="features-icon">
                             <img src="assets/images/features-icon-1.png" alt="">
@@ -208,7 +215,7 @@ https://templatemo.com/tm-543-breezed
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
+                <div class="col-lg-4 col-md-8 col-sm-12 col-xs-12" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
                     <div class="features-item">
                         <div class="features-icon">
                             <img src="assets/images/features-icon-1.png" alt="">
@@ -221,7 +228,7 @@ https://templatemo.com/tm-543-breezed
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                <div class="col-lg-4 col-md-8 col-sm-12 col-xs-12" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
                     <div class="features-item">
                         <div class="features-icon">
                             <img src="assets/images/features-icon-1.png" alt="">
@@ -230,6 +237,19 @@ https://templatemo.com/tm-543-breezed
                             <h4><a href="data_processing.html">Execute pipelines</a></h4>
                             <p>Shared data can be analyzed on our computational platform using predefined pipelines
                               or uploading your own container [work in progress].</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8 col-sm-12 col-xs-12" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <img src="assets/images/features-icon-1.png" alt="">
+                        </div>
+                        <div class="features-content">
+                            <h4>Learn about PET-BIDS, automated analyses, and join our events</h4>
+                            <p>We particpate and organize many scientific events. All of your activities are open,
+                            check out the <a href="https://github.com/openneuropet/outreach"> outreach repository here </a> 
+                            or access our <a href="outreach_activities.html"> outreach page </a>.</p>
                         </div>
                     </div>
                 </div>
@@ -294,40 +314,50 @@ https://templatemo.com/tm-543-breezed
                         <li data-filter=".tpl">PET Templates</li>
                     </ul>
                 </div>
-            </div>
+            </div> 
             <div class="col-lg-9">
                 <div class="filters-content">
                     <div class="row grid">
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all host">
                           <div class="item">
-                            <a href="assets/images/project-Pet-portal.jpg" data-lightbox="image-1" data-title="Part of OpenNeuro"><img src="assets/images/project-Pet-portal.jpg" alt=""></a>
+                            <a href="assets/images/project-Pet-portal.jpg" data-lightbox="image-1" 
+                            data-title="Part of OpenNeuro"><img src="assets/images/project-Pet-portal.jpg" alt="open neuro pet figure"></a>
                           </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all cur">
                           <div class="item">
-                            <a href="assets/images/project-BIDS_logo.jpg" data-lightbox="image-1" data-title="Contribute to BIDS standard: https://bids-specification.readthedocs.io/en/stable/"><img src="assets/images/project-BIDS_logo.jpg" alt=""></a>
+                            <a href="assets/images/project-BIDS_logo.jpg" data-lightbox="image-1" 
+                            data-title="Contribute to BIDS standard: https://bids-specification.readthedocs.io/en/stable/">
+                            <img src="assets/images/project-BIDS_logo.jpg" alt="BIDS BIDS_logo"></a>
+                            <figcaption> <a href="https://bids-specification.readthedocs.io/en/stable/">PET BIDS specification</a> </figcaption>
                           </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all tpl">
                           <div class="item">
-                            <a href="assets/images/project-serotonin-large.jpg" data-lightbox="image-1" data-title="Creating templates: https://github.com/openneuropet/templates"><img src="assets/images/project-serotonin.jpg" alt="https://www.jneurosci.org/content/37/1/120"></a>
+                            <a href="assets/images/project-serotonin-large.jpg" data-lightbox="image-1" 
+                            data-title="Creating templates: https://github.com/openneuropet/templates">
+                            <img src="assets/images/project-serotonin.jpg" alt="serotonine atlas figure"></a>
                           </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all tpl">
                           <div class="item">
-                            <a href="assets/images/project-bzr-large.jpg" data-lightbox="image-1" data-title="Creating templates: https://github.com/openneuropet/templates"><img src="assets/images/project-bzr.jpg" alt="https://www.sciencedirect.com/science/article/pii/S1053811921001555"></a>
+                            <a href="assets/images/project-bzr-large.jpg" data-lightbox="image-1" 
+                            data-title="Creating templates: https://github.com/openneuropet/templates">
+                            <img src="assets/images/project-bzr.jpg" alt="GABA atlas figure"></a>
                           </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all ana">
                           <div class="item">
                             <a href="assets/images/project-archival-large.jpg" data-lightbox="image-1"
-                            data-title="Publication and archival consensus: https://journals.sagepub.com/doi/10.1177/0271678X20905433"><img src="assets/images/project-archival.jpg" alt=""></a>
+                            data-title="Publication and archival consensus: https://journals.sagepub.com/doi/10.1177/0271678X20905433">
+                            <img src="assets/images/project-archival.jpg" alt="archival figure"></a>
+                            <figcaption> <a href="https://journals.sagepub.com/doi/10.1177/0271678X20905433">Consensus paper</a> </figcaption>
                           </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all ana">
                           <div class="item">
                             <a href="assets/images/project-analysis.jpg" data-lightbox="image-1"
-                            data-title="Developping pipelines"><img src="assets/images/project-analysis.jpg" alt=""></a>
+                            data-title="Developping pipelines"><img src="assets/images/project-analysis.jpg" alt="pipeline figure"></a>
                           </div>
                         </div>
                 </div>
@@ -441,7 +471,7 @@ https://templatemo.com/tm-543-breezed
                         </div>
                         <div class="item author-item">
                             <div class="member-thumb">
-                                <img src="assets/images/M7_Doug.jpg" alt="Douglas Greeve">
+                                <img src="assets/images/M7_Doug.jpg" alt="Douglas Greve">
                                 <div class="hover-effect">
                                     <div class="hover-content">
                                         <ul>
@@ -450,7 +480,7 @@ https://templatemo.com/tm-543-breezed
                                     </div>
                                 </div>
                             </div>
-                            <h4>Douglas Greeve</h4>
+                            <h4>Douglas Greve</h4>
                             <span>Faculty, Martinos Centre, MGH</span>
                         </div>
                         <div class="item author-item">
