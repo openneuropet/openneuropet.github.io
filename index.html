@@ -739,6 +739,26 @@ https://templatemo.com/tm-543-breezed
     <script src="assets/js/lightbox.js"></script>
     <script src="assets/js/isotope.js"></script>
 
+    <!-- Load the widget -->
+<script src="/osa-chat-widget.js"></script>
+
+<script>
+  // IMPORTANT: set this to your backend base URL (no trailing slash)
+  // Example: https://api.yourdomain.org/osa  OR  https://your-server.org
+  const BACKEND_BASE_URL = "https://YOUR_BACKEND_HOST";
+
+  // IMPORTANT: set this to your community id from config.yaml (id: ...)
+  const COMMUNITY_ID = "my-tool";
+
+  window.OSAChatWidget.setConfig({
+    communityId: COMMUNITY_ID,
+    apiEndpoint: BACKEND_BASE_URL,                 // widget will call `${apiEndpoint}/${communityId}/chat`
+    storageKey: `osa-chat-history-${COMMUNITY_ID}`,// optional
+    title: "My Tool Assistant",
+    initialMessage: "Hi! Ask me anything about My Tool."
+  });
+</script>
+
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
 
