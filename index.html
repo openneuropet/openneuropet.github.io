@@ -740,25 +740,20 @@ https://templatemo.com/tm-543-breezed
     <script src="assets/js/isotope.js"></script>
 
     <!-- Load the widget -->
-<script src="/osa-chat-widget.js"></script>
-
-<script>
-  // IMPORTANT: set this to your backend base URL (no trailing slash)
-  // Example: https://api.yourdomain.org/osa  OR  https://your-server.org
-  const BACKEND_BASE_URL = "https://YOUR_BACKEND_HOST";  // OPENROUTER_API_KEY_OpenNeuroPET
-
-  // IMPORTANT: set this to your community id from config.yaml (id: ...)
-  const COMMUNITY_ID = "ONP";
-
-  window.OSAChatWidget.setConfig({
-    communityId: COMMUNITY_ID,
-    apiEndpoint: BACKEND_BASE_URL,                 // widget will call `${apiEndpoint}/${communityId}/chat`
-    storageKey: `osa-chat-history-${ONP}`,// optional
+    <!-- script src="/osa-chat-widget.js"></script-->
+    <script src="https://demo.osc.earth/osa-chat-widget.js"></script>
+    <script>
+      OSAChatWidget.setConfig({
+    communityId: 'openneuropet',
+    // Optional: provide page-specific context
+    // widgetInstructions: 'Focus on topics relevant to this page.'
+    window.OSAChatWidget.setConfig({
+    communityId: openneuropet,
     title: "OpenNeuroPET Assistant",
     initialMessage: "Hi! Ask me anything about My Tools."
-  });
-</script>
-
+      });
+    </script>
+    
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
 
